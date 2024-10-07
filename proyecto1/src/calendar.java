@@ -49,9 +49,9 @@ public class calendar {
 
         // Imprimir los días del mes
         for (int day = 1; day <= daysInMonth; day++) {
-           /* if (day == taskday) {
-
-            } else  */ if (day == date) {
+            if (day == 13) {
+                System.out.printf(ANSI_RED_BACKGROUND + ANSI_Cian + "%3d " + ANSI_RESET, day);
+            } else if (day == date) {
                 System.out.printf(ANSI_PURPLE_BACKGROUND + ANSI_Cian + "%3d " + ANSI_RESET, day); // BUSCAR COMO COLERAR EL RESULTADO 
             } else {
                 System.out.printf("%3d ", day);
